@@ -1,0 +1,41 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [
+    {
+      "relationshipName": "autores",
+      "otherEntityName": "autor",
+      "relationshipType": "many-to-many",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "libros"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "fecha",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "genero",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paginas",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "titulo",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20201028003919",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "libro",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "no"
+}
